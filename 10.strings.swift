@@ -80,3 +80,11 @@ print(unicodeString.count)
 print(unicodeString.utf16)
 print(unicodeString.utf8)
 print(unicodeString.unicodeScalars)
+
+let fullName = "哔哩哔哩 狗 德川家康 薛定谔 保留"
+print(fullName.split(separator: " "))
+// ["哔哩哔哩", "狗", "德川家康", "薛定谔", "保留"]
+print(fullName.split(separator: " ", maxSplits: 3, omittingEmptySubsequences: false))
+// ["哔哩哔哩", "狗", "德川家康", "薛定谔 保留"]
+
+
